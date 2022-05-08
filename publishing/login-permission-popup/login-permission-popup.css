@@ -1,0 +1,59 @@
+/* 소셜 로그인 허용 팝업 */
+
+body {
+    display: flex;
+}
+/* 팝업창 박스 */
+.login-permission-box {
+    width: 270px;
+    height: 130px;
+    background-color: rgba(218, 221, 252, 0.8);
+    border-radius: 14px;
+    padding-top: 19px; 
+
+    align-items: center;
+    text-align: center;
+}
+
+/* 팝업 - 부엉이 우편함 타이틀 */
+.login-permission-title {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+/* 팝업 - 부엉이 우편함 login 설명 */
+.login-permission-explain {
+    font-weight: normal;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+/* 허용 버튼 상단 선 */
+hr {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-top: 1px solid rgba(60, 60, 67, 0.29);
+}
+
+/* 버튼 플렉스 박스 */
+.pms-btn-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    flex-grow: 1;
+    flex-basis: 90px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #007AFF;
+    background-color: transparent !important;
+    outline: none;
+    border: none;
+}
+
+.btn-separate-line {
+    height: 44px;
+    border-left: 1px solid rgba(60, 60, 67, 0.29);
+}

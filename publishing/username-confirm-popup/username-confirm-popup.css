@@ -1,0 +1,47 @@
+/* 닉네임 사용 가능 / 불가능 팝업 */
+
+body {
+    display: flex;
+}
+
+/* 팝업창 박스 */
+.username-confirm-box {
+    width: 270px;
+    height: 110px;
+    background-color: rgba(218, 221, 252, 0.8);
+    border-radius: 14px;
+    padding-top: 19px; 
+
+    align-items: center;
+    text-align: center;
+}
+
+/* 팝업 - 부엉이 우편함 타이틀 */
+.service-title {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+/* 팝업 - 닉네임 사용 가능 여부 설명란 */
+.username-confirm-explain {
+    font-weight: normal;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+/* 허용 버튼 상단 선 */
+hr {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-top: 1px solid rgba(60, 60, 67, 0.29);
+}
+
+/* 확인 버튼 */
+.checkBtn {
+    font-size: 17px;
+    font-weight: bold;
+    color: #007AFF;
+    background-color: transparent !important;
+    outline: none;
+    border: none;
+}
