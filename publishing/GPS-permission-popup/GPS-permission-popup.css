@@ -46,7 +46,7 @@ button {
     flex-grow: 1;
     flex-basis: 90px;
     font-size: 17px;
-    font-weight: normal;
+    font-weight: bold;
     color: #007AFF;
     background-color: transparent !important;
     outline: none;
