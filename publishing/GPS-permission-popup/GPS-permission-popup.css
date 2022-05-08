@@ -1,0 +1,47 @@
+/* gps 접근 허용 팝업 */
+
+body {
+    display: flex;
+}
+/* 팝업창 박스 */
+.gps-permission-box {
+    width: 270px;
+    height: 130px;
+    background-color: #DADDFC;
+    opacity: 0.8;
+    border-radius: 14px;
+    padding-top: 19px; 
+
+    align-items: center;
+    text-align: center;
+}
+
+/* 팝업 - 부엉이 우편함 타이틀 */
+.gps-permission-title {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+/* 팝업 - 부엉이 우편함 gps 설명 */
+.gps-permission-explain {
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+/* 버튼 플렉스 박스 */
+.pms-btn-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 0 30px;
+    color: #007AFF;
+    background-color: transparent !important;
+    outline: none;
+    border: none;
+}
