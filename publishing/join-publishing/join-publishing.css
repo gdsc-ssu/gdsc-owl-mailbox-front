@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body { font-family: 'Noto Sans KR', sans-serif; font-size:13px;}
+
+.form{
+    
+}
+
+#username{
+    width: 212px;
+    height: 25px;
+    background-color: white;
+    border-top: none; border-left: none; border-right:none;
+    border-bottom: 2px solid #828ED1;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #828ED1;
+}
+
+#duplicateBtn{
+    width: 80px;
+    height: 30px;
+    margin: 0 0 0 0;
+    background-color:#828ED1;  /* onClick-> #828ED1; */
+    border-radius: 8px;
+    border-style: hidden;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;  
+    font-weight: lighter;
+    color:white;
+}
+
+#viewingBtn{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-top: none; border-left: none; border-right:none;
+    border-bottom: 1px solid #828ED1;
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #828ED1;
+}
+
+#joinBtn{
+    width: 300px;
+    height: 50px;
+    background-color:#D2D2D2;  /* 클릭시 버튼 배경색: #828ED1 */
+    border-radius: 8px;
+    border-style: hidden;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:white;
+}
