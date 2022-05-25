@@ -52,19 +52,6 @@ const DuplicateBtn = styled.div`
     
 `;
 
-const CheckBox = styled.input`
-  padding: 20px;
-  position: absolute;
-  color: white;
-  font-size: 15px;
-  left: 50px;
-  zoom: 1.2;
-  ::placeholder {
-    color: black;
-  }
-`;
-
-
 const Box = styled.div`
   display: flex;
   align-items: center;
@@ -76,28 +63,6 @@ const Box1 = styled.div`
   display: flex;
 //   flex-direction: column;
   margin-top: 30px;
-`;
-
-const Text = styled.div`
-  flex: 1;
-  font-weight: bold;
-  margin-left: 10px;
-  text-decoration: underline;
-  margin-top: 2px;
-
-`;
-
-const Wrap = styled.div`
-    flex: 1; 
-    width: 330px;
-    margin-left: 150px;
-    margin-top: 2px;
-`;
-
-const InputBoxWrapper = styled.div`
-    display: flex;    
-    font-size: 13px;
-    color: #5a7cd3;
 `;
 
 

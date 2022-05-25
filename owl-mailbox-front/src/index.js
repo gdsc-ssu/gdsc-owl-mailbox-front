@@ -2,15 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MyPageMain from './Components/MyPage/MyPageMain';
 import NavBot from './Components/NavBot';
-import SignUp from './Components/SignUp/SignUp';
-import EditName from './Components/MyPage/EditName';
+
+import MakingOwl from './Components/MyPage/Setting/MakingOwl';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBot />
-    <EditName />
+    <MakingOwl />
   </React.StrictMode>
 );
 

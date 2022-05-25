@@ -10,6 +10,8 @@ import sent_mail from "../Icons/sent_mail.png";
 import setting from "../Icons/setting.png";
 import temporary_storage from "../Icons/temporary_storage.png";
 import edit_name from "../Icons/edit_name.png";
+import notion_logo from  "../Icons/notion_logo.png";
+import github_logo from "../Icons/github_logo.png";
 
 export const boardIcons = {
     bookmark,
@@ -39,4 +41,9 @@ export const mypage_icons = {
     setting,
     temporary_storage,
     sent_mail,
+}
+
+export const makingOwl_logo = {
+    github_logo,
+    notion_logo,
 }
