@@ -1,21 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { arrows } from "./Icons/Resources";
 
 const Container = styled.div`
-    width: 100%;
-`;
-
-const NavBot = styled.div`
-    height: 20px;
-    padding: 18px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    font-weight: bold;
-    font-size: 20px;
-    color: #5a7cd3;
-`;
-
-const Container2 = styled.div`
   padding-bottom: 0px;
   margin-top: 3px;
 `;
@@ -54,31 +40,23 @@ const Title = styled.div`
 const Setting = () => {
   return (
     <>
-    <Container>
-            <NavBot style={{ textAlign: "center"}}>                 
-            <img
-                    src={arrows.left_arrow}
-                    alt="왼쪽 화살표"
-                    style={{ width: "18px", float: "left", marginTop: "4px"}}
-                  ></img>마이 페이지</NavBot>
-      <Container2>
+      <Container>
         <Title>부엉이 우편함</Title>
         <Text>부엉이 우편함 탄생일기</Text>
         <Text>개인정보 처리 방침</Text>
         <Text>운영방침</Text>
-      </Container2>
-      <Container2>
+      </Container>
+      <Container>
         <Title>계정관리</Title>
         <Text>로그아웃</Text>
         <Text>회원 탈퇴</Text>
-      </Container2>
-      <Container2>
+      </Container>
+      <Container>
         <Title>건의 및 신고</Title>
         <Text>건의하기</Text>
         <Text>신고하기</Text>
-      </Container2>
-      <p style={{textAlign: "center", fontSize: "5px", marginTop: "20px", color: "f2f2f2"}}>Copyright owl-mailbox in GDSC, AllRights Reserved.</p>
       </Container>
+      <p style={{textAlign: "center", fontSize: "5px", marginTop: "20px", color: "f2f2f2"}}>Copyright owl-mailbox in GDSC, AllRights Reserved.</p>
     </>
   );
 };

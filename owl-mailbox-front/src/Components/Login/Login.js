@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { logos, login } from "./Icons/Resources";
+import { logos, login } from "../../Icons/Resources";
 
 const Container = styled.div`
     width: 100%;    
@@ -25,7 +25,7 @@ const LoginWrapper = styled.div`
 const KakaoLogin = styled.img`
     margin-top: 100px;
 `;
-const SignIn = () => {
+const Login = () => {
     return (
         <Container>
             <LogoDiv>
@@ -39,5 +39,5 @@ const SignIn = () => {
         
     )
   };
-  export default SignIn;
+  export default Login;
   

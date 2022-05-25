@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { logos } from "./Icons/Resources";
+import { logos } from "../../Icons/Resources";
+import { useState } from "react";
 
 const Container = styled.div`
     width: 100%;    
@@ -101,7 +102,7 @@ const InputBoxWrapper = styled.div`
 `;
 
 
-const Btn = styled.div`
+const Btn = styled.button`
   padding: 3px 20px;
   width: 75%;
   margin: 20px 0px 0px;
@@ -112,7 +113,11 @@ const Btn = styled.div`
   cursor: pointer;
   color: white;
   border-radius: 10px;
-  background-color: #d2d2d2
+  border: none;
+  background-color: #d2d2d2;
+  &;hover {
+    background-color: black;
+  }
 `;
 
 const SignUp = () => {

@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import React from "react";
-import { stamps, arrows } from "./Icons/Resources";
+import { stamps } from "./Icons/Resources";
 
-const Container = styled.div`
-    width: 100%;
-`;
+
 const BoardContainer = styled.div`
     width: 93%;
     min-height: 80vh;
@@ -20,14 +18,6 @@ const BoardChildContainer = styled.div`
     border-radius: 15px;
     border: 1px solid #5a7cd3;
 
-`;
-const NavBot = styled.div`
-    height: 20px;
-    padding: 18px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    font-weight: bold;
-    font-size: 20px;
-    color: #5a7cd3;
 `;
 
 const BoardChildStamp = styled.img`
@@ -59,13 +49,6 @@ const BoardChildName = styled.div`
 `;
 const Board = () => {
     return (
-        <Container>
-            <NavBot style={{ textAlign: "center"}}>                 
-            <img
-                    src={arrows.left_arrow}
-                    alt="왼쪽 화살표"
-                    style={{ width: "18px", float: "left", marginTop: "4px"}}
-                  ></img>보낸 편지함</NavBot>
             <BoardContainer>
                 <BoardChildContainer style={{paddingBottom: "35px"}}>
                     <BoardChildStamp 
@@ -79,7 +62,6 @@ const Board = () => {
                     <BoardChildName>익명의 부엉이</BoardChildName>
                 </BoardChildContainer>
             </BoardContainer>
-        </Container>
     )
   };
   export default Board;
