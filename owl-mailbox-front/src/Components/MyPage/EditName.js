@@ -13,7 +13,7 @@ const LogoImg = styled.img`
 
 const LogoDiv = styled.div`
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 23px;
     font-weight: bold;
     color: #5a7cd3;
@@ -119,28 +119,23 @@ const Btn = styled.button`
   }
 `;
 
-const SignUp = () => {
+const EditName = () => {
     return (
         <Container>
             <LogoDiv>
-                <LogoImg src = {owl_logos.owl_open}/>
-                <p>회원 가입</p>
+                <LogoImg src = {owl_logos.owl_close}/>
+                <p>닉네임 수정</p>
             </LogoDiv>
             <Box1>
                 <InputBox placeholder="닉네임을 입력하세요"/>
                 <DuplicateBtn>중복확인</DuplicateBtn>
             </Box1>
             <Box>
-            <InputBoxWrapper>
-                <CheckBox id="didAgree" type="checkbox" />
-                <Wrap>[필수] 사용자 이용약관 동의하기</Wrap>
-                <Text>보기</Text>
-            </InputBoxWrapper>
-            <Btn>가입하기</Btn>
+            <Btn>변경하기</Btn>
             </Box>
         </Container>
         
     )
   };
-  export default SignUp;
+  export default EditName;
   

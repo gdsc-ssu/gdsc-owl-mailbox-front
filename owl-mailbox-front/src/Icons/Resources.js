@@ -3,7 +3,8 @@ import siren from "../Icons/siren.png";
 import postage_stamp from "../Icons/postage_stamp.png";
 import left_arrow from "../Icons/left_arrow.png";
 import right_arrow from "../Icons/right_arrow.png"
-import main_logo from "../Icons/main_logo.png";
+import owl_open from "../Icons/owl_open.png";
+import owl_close from "../Icons/owl_close.png";
 import kakao_login_btn from "../Icons/kakao_login_btn.png";
 import sent_mail from "../Icons/sent_mail.png";
 import setting from "../Icons/setting.png";
@@ -24,8 +25,9 @@ export const arrows = {
     right_arrow,
 }
 
-export const logos = {
-    main_logo,
+export const owl_logos = {
+    owl_close,
+    owl_open,
 }
 
 export const login = {

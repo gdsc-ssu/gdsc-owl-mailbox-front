@@ -5,12 +5,12 @@ import reportWebVitals from './reportWebVitals';
 import MyPageMain from './Components/MyPage/MyPageMain';
 import NavBot from './Components/NavBot';
 import SignUp from './Components/SignUp/SignUp';
-
+import EditName from './Components/MyPage/EditName';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBot />
-    <MyPageMain />
+    <EditName />
   </React.StrictMode>
 );
 

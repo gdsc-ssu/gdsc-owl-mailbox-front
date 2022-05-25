@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { logos, login } from "../../Icons/Resources";
+import { owl_logos, login } from "../../Icons/Resources";
 
 const Container = styled.div`
     width: 100%;    
@@ -29,7 +29,7 @@ const Login = () => {
     return (
         <Container>
             <LogoDiv>
-                <LogoImg src = {logos.main_logo}/>
+                <LogoImg src = {owl_logos.owl_open}/>
                 <p>로그인</p>
             </LogoDiv>
             <LoginWrapper>
