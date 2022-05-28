@@ -4,13 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import NavBot from './Components/NavBot';
 import Create from './Components/Create';
-import DeleteAccount from './Components/MyPage/Setting/DeleteAccount';
-
+import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
+import Privacy from './Components/MyPage/Setting/AboutUs/Privacy';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBot/>
-    <DeleteAccount />
+    <Privacy />
   </React.StrictMode>
 );
 
