@@ -6,11 +6,20 @@ import NavBot from './Components/NavBot';
 import Create from './Components/Create';
 import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
 import Privacy from './Components/MyPage/Setting/AboutUs/Privacy';
+import ConfirmPopup from './Components/PopUp/ComfirmPopup';
+import SelectPopup from './Components/PopUp/SelectPopup';
+import StampObtainPopup from './Components/PopUp/StampOptainPopup';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBot/>
-    <Privacy />
+    {/* <Privacy /> */}
+    {/* <Create /> */}
+    {/* <DeleteAccount /> */}
+    {/* <ConfirmPopup /> */}
+    <SelectPopup />
+    {/* <StampObtainPopup /> */}
   </React.StrictMode>
 );
 
