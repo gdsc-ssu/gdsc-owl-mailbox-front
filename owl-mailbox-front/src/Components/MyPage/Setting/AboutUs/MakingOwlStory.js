@@ -14,14 +14,14 @@ const Container = styled.div`
   padding: 10px;
   font-size: 13px;
 `;
-const TermsAndConditions = () => {
+const MakingOwlStory = () => {
     return (
         <>
         <Container>
-            이것은 운영방침관련이다~~
+            이것은 탄생일기 넣어야함요~~~~
         </Container>
         </>
     )
 }
 
-export default TermsAndConditions;
+export default MakingOwlStory;
