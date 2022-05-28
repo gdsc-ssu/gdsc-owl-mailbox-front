@@ -17,7 +17,7 @@ const Nav = styled.div`
     color: #5a7cd3;
 `;
 
-const NavBot = () => {
+const NavBot = ({ Name }) => {
     return (
       <>
       <Container>
@@ -26,7 +26,7 @@ const NavBot = () => {
                       src={arrows.left_arrow}
                       alt="왼쪽 화살표"
                       style={{ width: "18px", float: "left", marginTop: "4px"}}
-                    ></img>마이 페이지</Nav>
+                    />마이 페이지</Nav>
         </Container>
       </>
     );

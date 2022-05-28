@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { makingOwl_logo } from "../../../Icons/Resources";
+import { makingOwl_logo } from "../../../../Icons/Resources";
 
 
 const Container = styled.div`
