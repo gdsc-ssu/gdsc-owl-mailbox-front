@@ -2,7 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
-// import { stamps } from "../Icons/Resources";
+import Stamp from "../../Icons/stamp_example.png";
 
 /* 팝업창 박스 */
 const Container = styled.div`
@@ -10,8 +10,8 @@ const Container = styled.div`
     left: 40%;
     top: 0%;
 
-    width: 270px;
-    height: 220px;
+    width: 250px;
+    height: 230px;
     background-color: rgba(218, 221, 252, 0.8);
     border-radius: 14px;
     padding-top: 10px; 
@@ -21,10 +21,10 @@ const Container = styled.div`
 `;
 
 /* 우표 이미지 - example */
-// const StampImg = styled.img`
-//     width: 50px;
-//     margin: 0 auto;
-// `;
+const StampImg = styled.img`
+    width: 80px;
+    margin: 0 auto;
+`;
 
 /* 팝업 - 부엉이 우편함 타이틀 */
 const Title = styled.div`
@@ -42,7 +42,7 @@ const Explain = styled.div`
 /* 허용 버튼 상단 선 */
 const StyledLine = styled.hr`
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border-top: 1px solid rgba(60, 60, 67, 0.29);
 `;
 
@@ -60,14 +60,11 @@ const StampObtainPopup = () => {
     return (
       <>
         <Container>
-        {/* <img
-            src={stamps.stamp_example}
-            alt="우표 이미지"
-            style={{ width: "50px", margin: "0 auto"}}
-        /> */}
             <Title>우표를 획득하였습니다!</Title>
             <Explain>
-                우표는 최대 5개까지 획득하실 수 있습니다. <br />
+                <StampImg src={Stamp} alt="stamp-img"/>
+                <br />
+                우표는 최대 5장까지 획득하실 수 있습니다. <br />
                 우표 획득 및 사용 기준 : <br />
                 편지 열람 시 1개의 우표 획득 <br />
                 편지 작성 시 1개의 우표 사용
