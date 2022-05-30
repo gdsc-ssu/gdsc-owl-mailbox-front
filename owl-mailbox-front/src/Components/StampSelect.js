@@ -7,13 +7,12 @@ import Stamp from "../Icons/stamp_example.png";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 30px;
 `;
 
 // 우표 카테고리 설명
 const Explain = styled.div`
-    margin-top: 20px;
+    margin: 20px 0 5px 40px;
     font-size: 12px;
 `;
 
@@ -21,6 +20,7 @@ const Explain = styled.div`
 const StampContainer = styled.div`
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
 
     width: 350px;
     height: 130px;
@@ -58,7 +58,7 @@ const StampImg = styled.img`
 
 // 선택하기 버튼
 const Button = styled.button`
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
 
     width: 200px;
     height: 40px;
