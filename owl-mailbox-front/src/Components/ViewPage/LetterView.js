@@ -1,14 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import Stamp from "../../Icons/stamp_example.png";
 
 const Container = styled.div`
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
+`;
 
-    // 스크롤바
+const LetterContent = styled.div`
+    width: 85%;
+    min-height: 400px;
+    max-height: 500px;
+    border: 1px solid #828ed1;
+    border-radius: 20px;
+    color: #6B6B6B;
+    margin: auto;
+    padding: 20px 10px;
+
+    overflow: scroll;
+
     &::-webkit-scrollbar {
         width: 7px;
         border-radius: 6px;
@@ -21,139 +31,47 @@ const Container = styled.div`
     }
 
     &::-webkit-scrollbar-corner {
-        background-color: #F6F6F6;
+        background-color: none;
         border-bottom-right-radius: 10px;
     }
 `;
 
-const LetterElement = styled.div`
-    width: 85%;
-    height: 100px;
-    border: 1px solid #828ed1;
-    background-color: #F6F6F6;
-    border-radius: 20px;
-    margin: 10px;
-
-    display: flex;
-    flex-direction: column;
+const StampImg = styled.img`
+    width: 150px;
+    float: right;
 `;
 
-const LetterInfo = styled.div``;
+const LetterInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 50px;
+    float: right;
+`;
 
 const LetterTitle = styled.div`
-    font-size: 15px;
     color: #828ed1;
-    font-weight: 600;
-    padding: 8px 15px;
-    float: left;
+    font-size: 13px;
+    font-weight: bold;
 `;
 
 const LetterDate = styled.div`
-    float: right;
-    padding: 10px 15px;
-    font-size: 12px;
     color: #828ed1;
-    font-weight: 500;
-    margin-top: 3px;
-`;
-
-const LetterContent = styled.div`
-    padding: 0 10px;
-    margin-left: 5px;
-    font-size: 15px;
-    color: #828ed1;
+    font-size: 13px;
+    font-weight: bold;
 `;
 
 const LetterView = () => {
     return (
         <Container>
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
-
-            <LetterElement>
-                <LetterInfo>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
-                    <LetterDate>2022.02.21</LetterDate>
-                </LetterInfo>
-                <LetterContent>편지 첫 한 줄만 미리 보여주기 글자 수 제한해서 보여줄 수 있으면 좋겠습...</LetterContent>
-            </LetterElement>
+            <LetterContent>
+            <StampImg src={Stamp} alt="stamp_image"></StampImg>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla sapien ac auctor ac ayctor pellentesque. Suspendisse elementum pharetra massa vel pretium. Fusce congue luctus lectus vel pellentesque. Sed ornare velit sem, id dapibus magna euismod id. In congue arcu sed congue dignissim. Donec accumsan purus eu fermentum sodales. Donec imperdiet porttitor lectus. Suspendisse nec venenatis risus, a tempus turpis. Aenean faucibus, leo non rutrum ornare, velit elit dignissim erat, id interdum nunc lacus ut ligula. Mauris molestie tortor at ex scelerisque luctus. Quisque sit amet dolor vel lacus vulputate cursus. Nulla varius mattis interdum. Nullam sit amet tristique velit.
+Nam vel ligula molestie quam mollis malesuada. Donec eu maximus orci. Vivamus consequat pulvinar est quis dignissim.Nam vel ligula molestie quam mollis malesuada. Donec eu maximus orci. Vivamus consequat pulvinar est quis dignissim.Nam vel ligula molestie quam mollis malesuada. Donec eu maximus orci. Vivamus consequat pulvinar est quis dignissim.Nam vel ligula molestie quam mollis malesuada. Donec eu maximus orci. Vivamus consequat pulvinar est quis dignissim. 
+            <LetterInfo>
+                <LetterDate>2022.02.21</LetterDate>
+                <LetterTitle>익명의 부엉이</LetterTitle>
+            </LetterInfo></LetterContent>
         </Container>
         
     )
