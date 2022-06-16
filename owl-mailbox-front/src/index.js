@@ -8,18 +8,20 @@ import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccoun
 import Privacy from './Components/MyPage/Setting/AboutUs/Privacy';
 import ConfirmPopup from './Components/PopUp/ComfirmPopup';
 import SelectPopup from './Components/PopUp/SelectPopup';
-import StampObtainPopup from './Components/PopUp/StampOptainPopup';
+import StampObtainPopup from './Components/PopUp/StampObtainPopup';
+import Login from './Components/Login/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBot/>
+    {<Login />}
+    {/* <NavBot/>*/}
     {/* <Privacy /> */}
     {/* <Create /> */}
     {/* <DeleteAccount /> */}
     {/* <ConfirmPopup /> */}
-    <SelectPopup />
-    {/* <StampObtainPopup /> */}
+    {/*<SelectPopup />*/}
+    {/* <StampObtainPopup />*/}
   </React.StrictMode>
 );
 

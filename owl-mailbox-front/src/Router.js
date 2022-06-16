@@ -6,6 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 
+
  import Create from "../src/Routes/Create";
  const RouterComponent = () => {
     UseGoogleAnalytics();
@@ -23,6 +24,18 @@ import {
       <RouterComponent />
     </Router>
   );
+
+  const Router = () =>{
+    return (
+      <BrowserRouter>
+      <Routes>
+        {/* <Route path="/" element={} /> */}
+        <Route path ="/login" element={<Login />} />
+        <Route path = "/kakaoLogin" element={<KakaoLogin />} />
+      </Routes>
+      </BrowserRouter>
+    );
+  };
   
   export default RouterExporter;
   
