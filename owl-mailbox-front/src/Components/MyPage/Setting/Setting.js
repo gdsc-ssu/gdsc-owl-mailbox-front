@@ -43,7 +43,7 @@ const Setting = () => {
       <Container>
         <Title>부엉이 우편함</Title>
         <Text>부엉이 우편함 탄생일기</Text>
-        <Text>개인정보 처리 방침</Text>
+          <Text>개인정보 처리 방침</Text>
         <Text>운영방침</Text>
       </Container>
       <Container>
