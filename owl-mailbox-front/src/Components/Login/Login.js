@@ -26,14 +26,18 @@ const KakaoLogin = styled.img`
     margin-top: 100px;
 `;
 const Login = () => {
+    const handleLogin = () =>{
+        window.location.href = KAKAO_AUTH_URL;
+    };
+
     return (
         <Container>
             <LogoDiv>
                 <LogoImg src = {owl_logos.owl_open}/>
                 <p>로그인</p>
             </LogoDiv>
-            <LoginWrapper>
-                <KakaoLogin src= {login.kakao_login_btn}/> 
+            <LoginWrapper>           
+                <KakaoLogin src= {login.kakao_login_btn} onClick = {handleLogin} />
             </LoginWrapper>
         </Container>
         

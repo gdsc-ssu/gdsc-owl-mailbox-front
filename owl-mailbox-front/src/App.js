@@ -15,6 +15,8 @@ const App = () => {
       <Route path="/create" element={<Create />} />
       <Route path="/setting" element={<Setting/>}/>
       <Route path="/setting/privacy" element={<Privacy/>}/>
+      <Route path="/login" element={<Login />} />
+      <Route path="/login/callback" element={<LoginCallback />} />
     </Routes>
   </div>
   );
