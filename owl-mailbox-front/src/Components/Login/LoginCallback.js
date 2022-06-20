@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { REST_API_KEY, REDIRECT_URI } from "./LoginData";
 import { useLocation, useNavigate  } from "react-router";
 
-
-
 function LoginCallback(){
 
     const location = useLocation();
