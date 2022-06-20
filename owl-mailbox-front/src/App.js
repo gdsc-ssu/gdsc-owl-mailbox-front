@@ -5,6 +5,8 @@ import Create from "./Routes/Create";
 import Home from './Components/Home';
 import Setting from './Routes/Setting';
 import Privacy from './Routes/Privacy';
+import Login from './Components/Login/Login';
+import LoginCallback from './Components/Login/LoginCallback';
 
 const App = () => {
   return (
