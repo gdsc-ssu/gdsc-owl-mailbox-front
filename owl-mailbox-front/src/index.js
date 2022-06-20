@@ -2,25 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import NavBot from './Components/NavBot';
-import Create from './Components/Create';
-import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
-import Privacy from './Components/MyPage/Setting/AboutUs/Privacy';
-import ConfirmPopup from './Components/PopUp/ComfirmPopup';
-import SelectPopup from './Components/PopUp/SelectPopup';
-import StampObtainPopup from './Components/PopUp/StampOptainPopup';
-
+import { BrowserRouter } from "react-router-dom";
+import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <NavBot/>
-    {/* <Privacy /> */}
-    {/* <Create /> */}
-    {/* <DeleteAccount /> */}
-    {/* <ConfirmPopup /> */}
-    <SelectPopup />
-    {/* <StampObtainPopup /> */}
-  </React.StrictMode>
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>
 );
 
 //TODO : Router 사용해서 루트짜기
