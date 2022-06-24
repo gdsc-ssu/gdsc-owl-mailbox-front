@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { owl_logos, login } from "../../Icons/Resources";
-import {KAKAO_AUTH_URL} from "./LoginData";
+import { KAKAO_AUTH_URL } from "./LoginData";
 
 const Container = styled.div`
     width: 100%;    
