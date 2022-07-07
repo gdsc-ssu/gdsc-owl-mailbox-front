@@ -136,6 +136,11 @@ const TempSaveHref = styled.a`
 `;
 
 const Create = () => {
+
+  const handleStampSelectClick = () =>{
+    window.location.href = "/stampselect";
+};
+
   return (
     <>
       <Container>
@@ -147,6 +152,7 @@ const Create = () => {
                 width: "120px", 
                 float: "left",
                 marginTop: "4px"}}
+                onClick={handleStampSelectClick}
           />
           <CalcLength>(0000/1000)</CalcLength>
           <ContentTextArea 

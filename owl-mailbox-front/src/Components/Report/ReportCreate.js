@@ -60,7 +60,7 @@ const CalcLength = styled.div`
 
 // 신고하기 버튼
 const Button = styled.button`
-    margin-left: 75%;
+    margin-left: 84%;
 
     width: 120px;
     height: 40px;
@@ -120,7 +120,7 @@ const ReportInfo = styled.div`
 // 신고 내역 삭제하기 버튼
 const DeleteBtn = styled.button`
   padding: 10px 15px;
-  margin-left: 53%;
+  margin-left: 72%;
 
   height: 15px;
   border: none;
@@ -133,9 +133,12 @@ const DeleteBtn = styled.button`
 `;
 
 const ReportCreate = () => {
+  const handleReportViewClick = () =>{
+    window.location.href = "/report/view";
+  };
     return (
       <>
-        <Container>
+        <Container onClick={handleReportViewClick}>
           <Title>내용 작성</Title>
           <ReportTitleInput placeholder={`신고 사유 제목을 입력해주세요.`}/>
           {/* 신고 사유 글자 수 계산 후 value로 적용 */}

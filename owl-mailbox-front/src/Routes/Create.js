@@ -1,4 +1,4 @@
-import Create from "../Components/Create";
+import Create from "../Components/PostPage/Create";
 import NavBot from "../Components/NavBot";
 
 const CreatePresenter = () => {

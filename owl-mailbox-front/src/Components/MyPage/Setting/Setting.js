@@ -36,25 +36,40 @@ const Title = styled.div`
   }
   
 `;
-
+// 
 const Setting = () => {
   return (
     <>
       <Container>
         <Title>부엉이 우편함</Title>
-        <Text>부엉이 우편함 탄생일기</Text>
-          <Text>개인정보 처리 방침</Text>
-        <Text>운영방침</Text>
+        <Text onClick={() => {
+          window.location.href = "/setting/makingowl"
+        }}>부엉이 우편함 탄생일기
+        </Text>
+          <Text onClick={()=>{
+            window.location.href = "/setting/privacy"
+          }}>개인정보 처리 방침
+          </Text>
+        <Text onClick={()=>{
+            window.location.href = "/setting/termsandconditions"
+          }}>운영방침
+          </Text>
       </Container>
       <Container>
         <Title>계정관리</Title>
-        <Text>로그아웃</Text>
-        <Text>회원 탈퇴</Text>
+        <Text onClick={()=>{
+            window.location.href = "/login"
+          }}>로그아웃</Text>
+        <Text onClick={()=>{
+            window.location.href = "/setting/deleteaccount"
+          }}>회원 탈퇴
+          </Text>
       </Container>
       <Container>
-        <Title>건의 및 신고</Title>
-        <Text>건의하기</Text>
-        <Text>신고하기</Text>
+        <Title>신고관리</Title>
+        <Text onClick={()=>{
+            window.location.href = "/report/view"
+          }}>신고목록</Text>
       </Container>
       <p style={{textAlign: "center", fontSize: "5px", marginTop: "20px", color: "f2f2f2"}}>Copyright owl-mailbox in GDSC, AllRights Reserved.</p>
     </>

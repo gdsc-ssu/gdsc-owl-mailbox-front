@@ -28,7 +28,7 @@ const Title = styled.div`
 // 신고글 작성 일자
 const ReportInfo = styled.div`
     padding-top: 10px;
-    margin-left: 53%;
+    margin-left: 75%;
     font-size: 12px;
     font-weight: 500;
 `;
@@ -48,7 +48,7 @@ const ReportTitle = styled.div`
 const ReportLengthInfo = styled.div`
     font-size: 12px;
     font-weight: 500;
-    margin-left: 86%;
+    margin-left: 93%;
 `;
 
 // 신고 내용 출력란
@@ -80,12 +80,9 @@ const ReportView = () => {
                     <ReportInfo>2022.02.26 11:03 작성</ReportInfo>
                 </InfoBox>
                 <ReportTitle>욕설을 포함한 편지 내용을 신고합니다.</ReportTitle>
-                <ReportLengthInfo>(350/500)</ReportLengthInfo>
+                <ReportLengthInfo>(36/500)</ReportLengthInfo>
                 <ReportContentTextarea readOnly>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, 
+                    너무 불쾌해요..다른 사람들이 이 글을 보지 않았으면 좋겠습니다.
                 </ReportContentTextarea>
             </Container>
         </>

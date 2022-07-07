@@ -17,7 +17,7 @@ const LetterContent = styled.div`
     color: #6B6B6B;
     margin: auto;
     padding: 20px 10px;
-
+    white-space:pre-wrap;
     overflow: scroll;
 
     &::-webkit-scrollbar {
@@ -67,22 +67,50 @@ const ReportIconBeforeBtn = styled.img`
     width: 60px;
     float: right;
     margin-top: 10px;
-    margin-right: 25px;
+    margin-right: 80px;
 `;
 
 const LetterView = () => {
+    const handleReportCreateClick = () =>{
+        window.location.href = "/report/create";
+      };
+
     return (
         <Container>
             <LetterContent>
                 <StampImg src={Stamp} alt="stamp_image"></StampImg>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla sapien ac auctor ac ayctor pellentesque. Suspendisse elementum pharetra massa vel pretium. Fusce congue luctus lectus vel pellentesque. Sed ornare velit sem, id dapibus magna euismod id. In congue arcu sed congue dignissim. Donec accumsan purus eu fermentum sodales. Donec imperdiet porttitor lectus. Suspendisse nec venenatis risus, a tempus turpis. Aenean faucibus, leo non rutrum ornare, velit elit dignissim erat, id interdum nunc lacus ut ligula. Mauris molestie tortor at ex scelerisque luctus. Quisque sit amet dolor vel lacus vulputate cursus. Nulla varius mattis interdum. Nullam sit amet tristique velit.
-Nam vel ligula molestie quam mollis malesuada. Donec eu maximus orci. Vivamus consequat pulvinar est quis dignissim.Nam vel ligula molestie quam mollis malesuada. Donec eu maximus orci. Vivamus consequat pulvinar est quis dignissim.Nam vel ligula molestie quam mollis malesuada. Donec eu maximus orci. Vivamus consequat pulvinar est quis dignissim.Nam vel ligula molestie quam mollis malesuada. Donec eu maximus orci. Vivamus consequat pulvinar est quis dignissim. 
+                GDSC Soongsil is a community group for Soongsil University students interested in programming and Google technology. <br />
+
+                We know the importance of growing together, and we share each other's knowledge and experiences. <br />
+
+                We also work to close the gap between theory and industry. <br /> <br />
+
+                <b>GDSC Soongsil has three parts.</b> <br />
+                - Web/Mobile Part <br />
+                - Server/Cloud Part <br />
+                - AI/ML Part <br />
+                Each member learns deeply in their own part, and expands their knowledge through interaction with each other. <br /> <br />
+
+                <b>We are going to do</b> <br />
+                - Networking <br />
+                - Study and Project <br />
+                - Open technical seminars <br />
+                - Solution challenge <br /> <br />
+
+
+                If you love programming, <br />
+                If you have a clear goal and can keep your passion, <br />
+                If you believe you can change the world yourself, <br />
+                If you want human networking and are interested in technology-related communications, <br />
+                If you know the value of growing together, not alone... <br /> <br />
+
+                <b>JOIN US!!</b>
                 <LetterInfo>
                     <LetterDate>2022.02.21</LetterDate>
                     <LetterTitle>익명의 부엉이</LetterTitle>
                 </LetterInfo>
             </LetterContent>
-                <ReportIconBeforeBtn src={ReportIconBefore} alt="report_icon_red"></ReportIconBeforeBtn>
+                <ReportIconBeforeBtn src={ReportIconBefore} alt="report_icon_red" onClick={handleReportCreateClick}></ReportIconBeforeBtn>
         </Container>
         
     )
