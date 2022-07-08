@@ -2,6 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import Stamp from "../../Icons/stamp_example.png";
+import {Link} from "react-router-dom";
 
 // 화면 전체 div flexbox
 const Container = styled.div`
@@ -58,7 +59,7 @@ const StampImg = styled.img`
 
 // 선택하기 버튼
 const Button = styled.button`
-    margin: 30px auto 0 auto;
+    margin: 30px auto 0 130px;
 
     width: 200px;
     height: 40px;
@@ -70,13 +71,18 @@ const Button = styled.button`
     font-size: 15px;
     color: #828ED1;
 
+    &:hover {
+        background-color: #828ed1;
+        color: white;
+    }
+
 `;
 
 const StampSelect = () => {
     return (
-      <>
+        <>
         <Container>
-            <Explain>우표.. 그런데 이제 계절을 곁들인</Explain>
+            <Explain>계절에 따라 우표를 붙여보세요.</Explain>
             <StampContainer>
                 <StampImg src={Stamp} alt="stamp-img" />
                 <StampImg src={Stamp} alt="stamp-img" />
@@ -86,7 +92,7 @@ const StampSelect = () => {
                 <StampImg src={Stamp} alt="stamp-img" />
             </StampContainer>
 
-            <Explain>우표.. 그런데 이제 기분을 곁들인</Explain>
+            <Explain>기분에 따라 우표를 붙여보세요.</Explain>
             <StampContainer>
                 <StampImg src={Stamp} alt="stamp-img" />
                 <StampImg src={Stamp} alt="stamp-img" />
@@ -96,7 +102,7 @@ const StampSelect = () => {
                 <StampImg src={Stamp} alt="stamp-img" />
             </StampContainer>
 
-            <Explain>우표.. 그런데 이제 특별함을 곁들인</Explain>
+            <Explain>특별한 우표를 당신에게 선물합니다.</Explain>
             <StampContainer>
                 <StampImg src={Stamp} alt="stamp-img" />
                 <StampImg src={Stamp} alt="stamp-img" />
@@ -106,7 +112,7 @@ const StampSelect = () => {
                 <StampImg src={Stamp} alt="stamp-img" />
             </StampContainer>
 
-            <Button onClick={""}>선택하기</Button>
+            <Link to="/create" style={{"textDecoration":"none"}}><Button>선택하기</Button></Link>
         </Container>
       </>
     );

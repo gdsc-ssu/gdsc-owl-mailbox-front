@@ -153,7 +153,7 @@ const HomeSimul = (props) => {
                         </LinkPageBtnContent>
                     </Link>
 
-                    <Link to="/mypagepresenter" style={{"textDecoration": "none"}}>
+                    <Link to="/mypage" style={{"textDecoration": "none"}}>
                         <LinkPageBtnContent>
                             <LinkPageBtnIconImg src={LetterPostImg} alt="mypage-icon" style={{"margin-left": "8px"}}/>
                             <LinkPageBtnTitle style={{"marginTop":"3px"}}>마이 페이지</LinkPageBtnTitle>

@@ -64,7 +64,7 @@ const LetterContent = styled.div`
     color: #828ed1;
 `;
 
-const LetterView = () => {
+const ListView = () => {
     const handleLetterClick = () =>{
         window.location.href = "/viewpage/letter";
     };
@@ -163,4 +163,4 @@ const LetterView = () => {
         
     )
 };
-export default LetterView;
+export default ListView;
