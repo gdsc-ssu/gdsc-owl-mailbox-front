@@ -62,7 +62,7 @@ const NumberBtnContent = styled.div`
 `;
 
 const NumberBtnCounter = styled.div`
-    font-size: 40px;
+    font-size: 35px;
     color: #828ED1;
     font-weight: bold;
     text-align: center;
@@ -136,11 +136,11 @@ const HomeSimul = (props) => {
             <ButtonSet>
                 <NumberBtn>
                     <NumberBtnContent>
-                        <NumberBtnCounter>2</NumberBtnCounter>
+                        <NumberBtnCounter>11</NumberBtnCounter>
                         <NumberBtnTitle>편지 수</NumberBtnTitle>
                     </NumberBtnContent>
                     <NumberBtnContent>
-                        <NumberBtnCounter>5</NumberBtnCounter>
+                        <NumberBtnCounter>11</NumberBtnCounter>
                         <NumberBtnTitle>우표 수</NumberBtnTitle>
                     </NumberBtnContent>
                 </NumberBtn>

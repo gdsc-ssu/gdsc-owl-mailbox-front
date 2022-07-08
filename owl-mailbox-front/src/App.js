@@ -9,8 +9,6 @@ import Login from './Components/Login/Login';
 import LoginCallback from './Components/Login/LoginCallback';
 import NicknameRandom from './Components/Login/NicknameRandom';
 import SignUp from './Components/SignUp/SignUp';
-import ReportCreate from './Components/Report/ReportCreate';
-import ReportView from './Components/Report/ReportView';
 import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
 import HomeSimul from './Components/HomeSimul';
 import MyPagePresenter from './Routes/MyPage';
@@ -22,6 +20,7 @@ import LetterViewPresenter from './Routes/LetterView';
 import ListViewPresenter from './Routes/ListView';
 import ReportSelectPresenter from './Routes/ReportSelect';
 import TermsAndConditionsPresenter from './Routes/TermsAndConditions';
+import TempLetterViewPresenter from './Routes/TempLetterView';
 
 const App = () => {
   return (
@@ -34,7 +33,7 @@ const App = () => {
 
       <Route path="/mypage" element={<MyPagePresenter />} />
       <Route path="/mypage/editname" element={<EditName />} />
-      <Route path="/mypage/sentmailbox" element={<SentListViewPresenter />} />
+      <Route path="/mypage/sentmailbox" element={<ListViewPresenter />} />
       <Route path="/mypage/tempmailbox" element={<TempListViewPresenter />} />
 
       <Route path="/setting" element={<Setting/>}/>
@@ -52,7 +51,7 @@ const App = () => {
       
       <Route path="/viewpage" element={<ListViewPresenter />} />
       <Route path="/viewpage/letter" element={<LetterViewPresenter />} />
-
+      <Route path="/viewpage/templetter" element={<TempLetterViewPresenter />} />
 
       <Route path="/report/view" element={< ReportSelectPresenter/>} />
 

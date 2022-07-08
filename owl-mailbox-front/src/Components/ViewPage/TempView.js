@@ -66,7 +66,7 @@ const LetterContent = styled.div`
 
 const ListView = () => {
     const handleLetterClick = () =>{
-        window.location.href = "/viewpage/letter";
+        window.location.href = "/viewpage/templetter";
     };
 
     return (

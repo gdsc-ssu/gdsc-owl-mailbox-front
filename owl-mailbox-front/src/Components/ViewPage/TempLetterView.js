@@ -173,7 +173,7 @@ const Create = () => {
       <Container>
         <TextContainer>
           <img
-            src={stamps.gdsc_stamp}
+            src={stamps.ssu_stamp}
               alt="우표 이미지"
               style={{ 
                 width: "100px", 
@@ -183,13 +183,7 @@ const Create = () => {
           />
           <CalcLength>(0000/1000)</CalcLength>
           <ContentTextArea 
-          placeholder={`부엉이 우편함은 누구나 기분 좋게 참여할 수 있는 커뮤니티를 만들기 위해 이용 규칙을 제정해 운영하고 있어요.
-
-  하위 내용 작성시 신고 조치될 수 있어요.
-  ·욕설 / 비방
-  ·허위사실 유포
-  ·광고 / 음란성 게시물
-  ·도배성 글`}/>
+          placeholder={`무슨말을 적지요..? 지디에스씨 숭실... 부엉이우편함 화이팅`}/>
         </TextContainer>
         
         <ExtinctWrapper>

@@ -15,6 +15,7 @@ import github_logo from "../Icons/github_logo.png";
 import stamp_example from "../Icons/stamp_example.png";
 import gdsc_stamp from "../Icons/letter-stamps/03-gdsc.png";
 import making_owl_story from "../Icons/making_owl_story.png";
+import ssu_stamp from "../Icons/letter-stamps/03-ssu.png";
 
 export const boardIcons = {
     bookmark,
@@ -25,6 +26,7 @@ export const stamps = {
     postage_stamp,
     stamp_example,
     gdsc_stamp,
+    ssu_stamp,
 }
 
 export const arrows = {
