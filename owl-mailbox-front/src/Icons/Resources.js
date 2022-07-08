@@ -14,6 +14,7 @@ import notion_logo from  "../Icons/notion_logo.png";
 import github_logo from "../Icons/github_logo.png";
 import stamp_example from "../Icons/stamp_example.png";
 import gdsc_stamp from "../Icons/letter-stamps/03-gdsc.png";
+import making_owl_story from "../Icons/making_owl_story.png";
 
 export const boardIcons = {
     bookmark,
@@ -50,4 +51,8 @@ export const mypage_icons = {
 export const makingOwl_logo = {
     github_logo,
     notion_logo,
+}
+
+export const makingOwlStory = {
+    making_owl_story,
 }

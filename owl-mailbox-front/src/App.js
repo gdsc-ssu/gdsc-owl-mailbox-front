@@ -22,6 +22,7 @@ import EditName from './Components/MyPage/EditName';
 import SentListViewPresenter from './Routes/TempListView';
 import TempListViewPresenter from './Routes/TempListView';
 import StampSelectPresenter from './Routes/StampSelect';
+import LetterViewPresenter from './Routes/LetterView';
 
 const App = () => {
   return (
@@ -51,7 +52,8 @@ const App = () => {
       <Route path="/signup" element={<SignUp/>}/>
       
       <Route path="/viewpage" element={<ListView />} />
-      <Route path="/viewpage/letter" element={<LetterView />} />
+      <Route path="/viewpage/letter" element={<LetterViewPresenter />} />
+
 
       <Route path="/report/create" element={< ReportCreate/>} />
       <Route path="/report/view" element={< ReportView/>} />

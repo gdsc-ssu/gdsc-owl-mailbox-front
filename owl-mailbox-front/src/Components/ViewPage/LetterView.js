@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Stamp from "../../Icons/stamp_example.png";
+import { stamps } from "../../Icons/Resources";
 import ReportIconBefore from "../../Icons/report_icon_red.png";
 
 const Container = styled.div`
@@ -67,7 +67,7 @@ const ReportIconBeforeBtn = styled.img`
     width: 60px;
     float: right;
     margin-top: 10px;
-    margin-right: 80px;
+    margin-right: 70px;
 `;
 
 const LetterView = () => {
@@ -78,7 +78,7 @@ const LetterView = () => {
     return (
         <Container>
             <LetterContent>
-                <StampImg src={Stamp} alt="stamp_image"></StampImg>
+                <StampImg src={stamps.gdsc_stamp} alt="stamp_image"></StampImg>
                 GDSC Soongsil is a community group for Soongsil University students interested in programming and Google technology. <br />
 
                 We know the importance of growing together, and we share each other's knowledge and experiences. <br />
@@ -106,8 +106,8 @@ const LetterView = () => {
 
                 <b>JOIN US!!</b>
                 <LetterInfo>
-                    <LetterDate>2022.02.21</LetterDate>
-                    <LetterTitle>익명의 부엉이</LetterTitle>
+                    <LetterDate>2022.07.07</LetterDate>
+                    <LetterTitle>익명의 부엉이_13</LetterTitle>
                 </LetterInfo>
             </LetterContent>
                 <ReportIconBeforeBtn src={ReportIconBefore} alt="report_icon_red" onClick={handleReportCreateClick}></ReportIconBeforeBtn>

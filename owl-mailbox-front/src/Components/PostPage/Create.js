@@ -58,8 +58,8 @@ const ContentTextArea = styled.textarea`
 
 // 신고 내용 글자 수 출력란
 const CalcLength = styled.div`
-  font-size: 12px;
-  margin-left: 85%;
+  font-size: 13px;
+  margin-left: 88%;
   margin-top: 100px;
 `;
 
@@ -107,7 +107,7 @@ const ExtinctButton = styled.button`
 
 const ExtinctTextBox = styled.div`
   display: flex;
-  width: 220px;
+  width: 260px;
   justify-content: space-around;
   margin-top: 10px;
 `;
@@ -201,9 +201,9 @@ const Create = () => {
             <ExtinctButton onClick={handleClick} color="white"></ExtinctButton>
           </ExtinctSettingBar>
           <ExtinctTextBox>
-              <ExtinctText>5부엉</ExtinctText>
-              <ExtinctText>10부엉</ExtinctText>
-              <ExtinctText>30부엉</ExtinctText>
+              <ExtinctText >5부엉</ExtinctText><br />
+              <ExtinctText>10부엉</ExtinctText><br />
+              <ExtinctText>30부엉</ExtinctText><br />
               <ExtinctText>50부엉</ExtinctText>
             </ExtinctTextBox>
         </ExtinctWrapper>

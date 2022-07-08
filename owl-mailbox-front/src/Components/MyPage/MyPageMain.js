@@ -11,10 +11,12 @@ const NameTextWrapper = styled.div`
 const NameText = styled.div`
     font-weight: bold;
     color: #828ed1;
+    font-size: 30px;
 `;
 
 const Text = styled.div`
     color: #828ed1;
+    font-size: 30px;
 `;
 
 const MyPageImgWrapper = styled.div`
@@ -30,7 +32,7 @@ const MyPageMain = () => {
     return (
         <>
         <NameTextWrapper>
-            <NameText>보내는사람닉네임글자 님,</NameText>
+            <NameText>익명의 부엉이_13 님,</NameText>
             <Text>안녕하세요.</Text>
         </NameTextWrapper>
         <MyPageImgWrapper>
