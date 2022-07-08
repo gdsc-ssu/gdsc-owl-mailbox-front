@@ -1,11 +1,11 @@
 import NavBot from "../Components/NavBot";
-import ListView from "../Components/ViewPage/ListView";
+import TempView from "../Components/ViewPage/TempView";
 
 const TempListViewPresenter = () => {
     return (
         <>
         <NavBot name="임시 저장함" />
-        <ListView />
+        <TempView />
         </>
 
     )

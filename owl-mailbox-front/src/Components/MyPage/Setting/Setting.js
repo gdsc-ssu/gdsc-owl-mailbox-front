@@ -65,12 +65,6 @@ const Setting = () => {
           }}>회원 탈퇴
           </Text>
       </Container>
-      <Container>
-        <Title>신고관리</Title>
-        <Text onClick={()=>{
-            window.location.href = "/report/view"
-          }}>신고목록</Text>
-      </Container>
       <p style={{textAlign: "center", fontSize: "5px", marginTop: "20px", color: "f2f2f2"}}>Copyright owl-mailbox in GDSC, AllRights Reserved.</p>
     </>
   );

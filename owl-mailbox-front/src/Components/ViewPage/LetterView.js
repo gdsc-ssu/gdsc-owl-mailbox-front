@@ -72,7 +72,7 @@ const ReportIconBeforeBtn = styled.img`
 
 const LetterView = () => {
     const handleReportCreateClick = () =>{
-        window.location.href = "/report/create";
+        window.location.href = "/report/view";
       };
 
     return (

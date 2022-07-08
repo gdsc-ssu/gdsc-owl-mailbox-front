@@ -8,12 +8,9 @@ import Privacy from './Routes/Privacy';
 import Login from './Components/Login/Login';
 import LoginCallback from './Components/Login/LoginCallback';
 import NicknameRandom from './Components/Login/NicknameRandom';
-import LetterView from './Components/ViewPage/LetterView';
-import ListView from './Components/ViewPage/ListView';
 import SignUp from './Components/SignUp/SignUp';
 import ReportCreate from './Components/Report/ReportCreate';
 import ReportView from './Components/Report/ReportView';
-import StampSelect from './Components/PostPage/StampSelect';
 import TermsAndConditions from './Components/MyPage/Setting/AboutUs/TermsAndConditions';
 import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
 import HomeSimul from './Components/HomeSimul';
@@ -23,6 +20,8 @@ import SentListViewPresenter from './Routes/TempListView';
 import TempListViewPresenter from './Routes/TempListView';
 import StampSelectPresenter from './Routes/StampSelect';
 import LetterViewPresenter from './Routes/LetterView';
+import ListViewPresenter from './Routes/ListView';
+import ReportSelectPresenter from './Routes/ReportSelect';
 
 const App = () => {
   return (
@@ -51,12 +50,11 @@ const App = () => {
       {/* signup은 당장 필요없을 것 같지만 연결만 해뒀습니당*/}
       <Route path="/signup" element={<SignUp/>}/>
       
-      <Route path="/viewpage" element={<ListView />} />
+      <Route path="/viewpage" element={<ListViewPresenter />} />
       <Route path="/viewpage/letter" element={<LetterViewPresenter />} />
 
 
-      <Route path="/report/create" element={< ReportCreate/>} />
-      <Route path="/report/view" element={< ReportView/>} />
+      <Route path="/report/view" element={< ReportSelectPresenter/>} />
 
     </Routes>
   </div>
