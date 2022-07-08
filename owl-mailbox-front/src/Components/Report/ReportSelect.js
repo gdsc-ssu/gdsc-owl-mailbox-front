@@ -7,6 +7,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    margin-top: 30px;
 `;
 
 const ReportSection = styled.div`
@@ -44,9 +45,13 @@ const ReportReason = styled.div`
 `;
 
 const ReportSelect = () => {
+    const handleReportClick = () =>{
+        window.location.href = "/";
+    };
+
     return (
         <>
-        <Container>
+        <Container onClick={handleReportClick}>
             <ReportSection>
                 <SectionTitle>신고 사유 선택<hr/></SectionTitle>
                 <ReportReason>욕설/비하<hr/></ReportReason>

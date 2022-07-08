@@ -4,7 +4,7 @@ import NavBot from "../Components/NavBot";
 const ListViewPresenter = () => {
     return (
         <>
-        <NavBot name="리스트보기" />
+        <NavBot name="편지 목록" />
         <ListView />
         </>
 
