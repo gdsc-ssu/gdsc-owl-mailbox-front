@@ -16,12 +16,14 @@ import ReportView from './Components/Report/ReportView';
 import StampSelect from './Components/PostPage/StampSelect';
 import TermsAndConditions from './Components/MyPage/Setting/AboutUs/TermsAndConditions';
 import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
+import HomeSimul from './Components/HomeSimul';
 
 const App = () => {
   return (
     <div>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<HomeSimul />} />
+      {/* <Route path="/" element={<Home />} /> */}
       <Route path="/create" element={<Create />} />
       <Route path="/stampselect" element={< StampSelect/>} />
 
