@@ -1,4 +1,4 @@
-import EditName from "../Components/Mypage/Setting/EditName";
+import EditName from "../Components/MyPage/EditName"
 import NavBot from "../Components/NavBot";
 
 const EditNamePresenter = () => {

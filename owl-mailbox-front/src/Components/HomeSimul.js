@@ -136,7 +136,7 @@ const HomeSimul = (props) => {
             <ButtonSet>
                 <NumberBtn>
                     <NumberBtnContent>
-                        <NumberBtnCounter>11</NumberBtnCounter>
+                        <NumberBtnCounter>2</NumberBtnCounter>
                         <NumberBtnTitle>편지 수</NumberBtnTitle>
                     </NumberBtnContent>
                     <NumberBtnContent>

@@ -12,7 +12,7 @@ const Container = styled.div`
 
 // 우표 카테고리 설명
 const Explain = styled.div`
-    margin: 20px 0 5px 40px;
+    margin: 20px 0 5px 0px;
     font-size: 12px;
 `;
 

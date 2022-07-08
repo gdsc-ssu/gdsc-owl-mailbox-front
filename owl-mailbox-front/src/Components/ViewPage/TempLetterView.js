@@ -206,7 +206,7 @@ const Create = () => {
           <Button>등록하기</Button>
         </ButtonWrapper>
         </Link>
-        <Link to="/mypage" style={{"textDecoration":"none"}}><TempSaveHref>임시저장하기</TempSaveHref></Link>
+        <Link to="/mypage/tempmailbox" style={{"textDecoration":"none"}}><TempSaveHref>임시저장하기</TempSaveHref></Link>
       </Container>
     </>
   );
