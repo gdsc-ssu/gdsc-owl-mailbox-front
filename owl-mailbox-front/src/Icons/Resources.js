@@ -13,6 +13,7 @@ import edit_name from "../Icons/edit_name.png";
 import notion_logo from  "../Icons/notion_logo.png";
 import github_logo from "../Icons/github_logo.png";
 import stamp_example from "../Icons/stamp_example.png";
+import gdsc_stamp from "../Icons/letter-stamps/03-gdsc.png";
 
 export const boardIcons = {
     bookmark,
@@ -22,6 +23,7 @@ export const boardIcons = {
 export const stamps = {
     postage_stamp,
     stamp_example,
+    gdsc_stamp,
 }
 
 export const arrows = {
