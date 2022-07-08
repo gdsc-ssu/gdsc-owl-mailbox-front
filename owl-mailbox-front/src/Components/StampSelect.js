@@ -76,7 +76,7 @@ const StampSelect = () => {
     return (
       <>
         <Container>
-            <Explain>우표.. 그런데 이제 계절을 곁들인</Explain>
+            <Explain>계절에 따라 우표를 붙여보세요.</Explain>
             <StampContainer>
                 <StampImg src={Stamp} alt="stamp-img" />
                 <StampImg src={Stamp} alt="stamp-img" />
@@ -86,7 +86,7 @@ const StampSelect = () => {
                 <StampImg src={Stamp} alt="stamp-img" />
             </StampContainer>
 
-            <Explain>우표.. 그런데 이제 기분을 곁들인</Explain>
+            <Explain>기분에 따라 우표를 붙여보세요.</Explain>
             <StampContainer>
                 <StampImg src={Stamp} alt="stamp-img" />
                 <StampImg src={Stamp} alt="stamp-img" />
@@ -96,7 +96,7 @@ const StampSelect = () => {
                 <StampImg src={Stamp} alt="stamp-img" />
             </StampContainer>
 
-            <Explain>우표.. 그런데 이제 특별함을 곁들인</Explain>
+            <Explain>특별한 우표를 당신에게 선물합니다.</Explain>
             <StampContainer>
                 <StampImg src={Stamp} alt="stamp-img" />
                 <StampImg src={Stamp} alt="stamp-img" />

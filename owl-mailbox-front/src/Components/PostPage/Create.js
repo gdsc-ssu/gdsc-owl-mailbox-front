@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import { stamps } from "../../Icons/Resources";
+import { Link } from "react-router-dom";
 
 // 전체 container
 const Container = styled.div`
@@ -92,14 +93,34 @@ const ExtinctSettingBar = styled.div`
 const ExtinctButton = styled.button`
   width: 10px;
   height: 20px;
-  background-color: white;
+  margin-bottom: 10px;
+  background-color: ${props => props.color};
   border: 1px solid #828ed1;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
 
   &:hover {
     background-color: #828ed1;
     border: 1px solid #828ed1;
+  }
+`;
+
+const ExtinctTextBox = styled.div`
+  display: flex;
+  width: 220px;
+  justify-content: space-around;
+  margin-top: 10px;
+`;
+
+const ExtinctText = styled.div`
+  font-size: 15px;
+  font-weight: 500;
+  color: #8e82d1;    
+  cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+    font-size: 15px;
   }
 `;
 
@@ -116,7 +137,7 @@ const ButtonWrapper = styled.div`
 
 const Button = styled.div`
   padding: 10px 30px;
-  width: 50%;
+  width: 120px;
   border-radius: 15px;
   font-weight: bold;
   margin: auto;
@@ -139,7 +160,13 @@ const Create = () => {
 
   const handleStampSelectClick = () =>{
     window.location.href = "/stampselect";
-};
+  };
+
+  const [color, setColor] = useState("white");
+
+  const handleClick = () => {
+    color === "white" ? setColor("#828ed1") : setColor("red");
+  }
 
   return (
     <>
@@ -156,7 +183,7 @@ const Create = () => {
           />
           <CalcLength>(0000/1000)</CalcLength>
           <ContentTextArea 
-          placeholder={`부엉이 우편함은 누구나 기분 좋게 참여할 수 있는 커뮤니티를       만들기 위해 이용 규칙을 제정해 운영하고 있어요.
+          placeholder={`부엉이 우편함은 누구나 기분 좋게 참여할 수 있는 커뮤니티를 만들기 위해 이용 규칙을 제정해 운영하고 있어요.
 
   하위 내용 작성시 신고 조치될 수 있어요.
   ·욕설 / 비방
@@ -168,16 +195,24 @@ const Create = () => {
         <ExtinctWrapper>
           <ExtinctTitle>이 편지를 읽을 부엉이 수를 선택해주세요.</ExtinctTitle>
           <ExtinctSettingBar>
-            <ExtinctButton></ExtinctButton>
-            <ExtinctButton></ExtinctButton>
-            <ExtinctButton></ExtinctButton>
-            <ExtinctButton></ExtinctButton>
+            <ExtinctButton onClick={handleClick} color="white"></ExtinctButton>
+            <ExtinctButton onClick={handleClick} color="white"></ExtinctButton>
+            <ExtinctButton onClick={handleClick} color="white"></ExtinctButton>
+            <ExtinctButton onClick={handleClick} color="white"></ExtinctButton>
           </ExtinctSettingBar>
+          <ExtinctTextBox>
+              <ExtinctText>5부엉</ExtinctText>
+              <ExtinctText>10부엉</ExtinctText>
+              <ExtinctText>30부엉</ExtinctText>
+              <ExtinctText>50부엉</ExtinctText>
+            </ExtinctTextBox>
         </ExtinctWrapper>
+        <Link to="/" style={{"textDecoration":"none"}}>
         <ButtonWrapper>
           <Button>등록하기</Button>
         </ButtonWrapper>
-        <TempSaveHref>임시저장하기</TempSaveHref>
+        </Link>
+        <Link to="/" style={{"textDecoration":"none"}}><TempSaveHref>임시저장하기</TempSaveHref></Link>
       </Container>
     </>
   );

@@ -16,14 +16,26 @@ import ReportView from './Components/Report/ReportView';
 import StampSelect from './Components/PostPage/StampSelect';
 import TermsAndConditions from './Components/MyPage/Setting/AboutUs/TermsAndConditions';
 import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
+import HomeSimul from './Components/HomeSimul';
+import MyPagePresenter from './Routes/MyPage';
+import EditName from './Components/MyPage/EditName';
+import SentListViewPresenter from './Routes/TempListView';
+import TempListViewPresenter from './Routes/TempListView';
+import StampSelectPresenter from './Routes/StampSelect';
 
 const App = () => {
   return (
     <div>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<HomeSimul />} />
+      {/* <Route path="/" element={<Home />} /> */}
       <Route path="/create" element={<Create />} />
-      <Route path="/stampselect" element={< StampSelect/>} />
+      <Route path="/stampselect" element={< StampSelectPresenter/>} />
+
+      <Route path="/mypage" element={<MyPagePresenter />} />
+      <Route path="/mypage/editname" element={<EditName />} />
+      <Route path="/mypage/sentmailbox" element={<SentListViewPresenter />} />
+      <Route path="/mypage/tempmailbox" element={<TempListViewPresenter />} />
 
       <Route path="/setting" element={<Setting/>}/>
       <Route path="/setting/makingowl" element={<MakingOwl />} />

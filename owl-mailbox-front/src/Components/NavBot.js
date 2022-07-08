@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { arrows } from "../Icons/Resources";
 
@@ -21,11 +22,14 @@ const NavBot = (props) => {
       <>
       {/* <Container> */}
               <Nav style={{ textAlign: "center"}}>                 
+              <Link to="/">
               <img
                       src={arrows.left_arrow}
                       alt="왼쪽 화살표"
-                      style={{ width: "18px", float: "left", marginTop: "4px"}}
-                    />{props.name}</Nav>
+                      style={{ width: "18px", float: "left", marginTop: "4px", marginLeft: "10px"}}
+              />
+              </Link>
+                    {props.name}</Nav>
         {/* </Container> */}
       </>
     );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { stamps } from "../Icons/Resources";
 
@@ -63,7 +64,7 @@ const Create = () => {
 ·광고 / 음란성 게시물
 ·도배성 글`}/>
         <ButtonWrapper>
-          <Button>등록하기</Button>
+          <Link to="/"><Button>등록하기</Button></Link>
         </ButtonWrapper>
       </Container>
     </>

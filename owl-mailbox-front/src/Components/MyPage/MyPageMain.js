@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { mypage_icons } from "../../Icons/Resources";
+import { Link } from 'react-router-dom';
 
 const NameTextWrapper = styled.div`
     margin: 50px;
@@ -33,10 +34,10 @@ const MyPageMain = () => {
             <Text>안녕하세요.</Text>
         </NameTextWrapper>
         <MyPageImgWrapper>
-                <MyPageImg src={mypage_icons.sent_mail}/>
-                <MyPageImg src={mypage_icons.temporary_storage}/>
-                <MyPageImg src={mypage_icons.edit_name}/>
-                <MyPageImg src={mypage_icons.setting}/>
+                <Link to="/mypage/sentmailbox"><MyPageImg src={mypage_icons.sent_mail}/></Link>
+                <Link to="/mypage/tempmailbox"><MyPageImg src={mypage_icons.temporary_storage}/></Link>
+                <Link to="/mypage/editname"><MyPageImg src={mypage_icons.edit_name}/></Link>
+                <Link to="/setting"><MyPageImg src={mypage_icons.setting}/></Link>
             </MyPageImgWrapper>
             <p style={{textAlign: "center", fontSize: "5px", marginTop: "20px", color: "f2f2f2"}}>Copyright owl-mailbox in GDSC, AllRights Reserved.</p>
         </>
