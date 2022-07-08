@@ -173,10 +173,10 @@ const Create = () => {
       <Container>
         <TextContainer>
           <img
-            src={stamps.stamp_example}
+            src={stamps.gdsc_stamp}
               alt="우표 이미지"
               style={{ 
-                width: "120px", 
+                width: "100px", 
                 float: "left",
                 marginTop: "4px"}}
                 onClick={handleStampSelectClick}
