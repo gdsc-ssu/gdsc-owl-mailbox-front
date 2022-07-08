@@ -146,14 +146,19 @@ const HomeSimul = (props) => {
                 </NumberBtn>
 
                 <LinkPageBtn>
-                    <LinkPageBtnContent>
-                        <LinkPageBtnIconImg src={MypageImg} alt="letter-post-icon" />
-                        <LinkPageBtnTitle>편지 작성</LinkPageBtnTitle>
-                    </LinkPageBtnContent>
-                    <LinkPageBtnContent>
-                        <LinkPageBtnIconImg src={LetterPostImg} alt="mypage-icon" style={{"margin-left": "8px"}}/>
-                        <LinkPageBtnTitle>마이 페이지</LinkPageBtnTitle>
-                    </LinkPageBtnContent>
+                    <Link to="/create" style={{"textDecoration": "none"}}>
+                        <LinkPageBtnContent>
+                            <LinkPageBtnIconImg src={MypageImg} alt="letter-post-icon" />
+                            <LinkPageBtnTitle>편지 작성</LinkPageBtnTitle>
+                        </LinkPageBtnContent>
+                    </Link>
+
+                    <Link to="/mypagepresenter" style={{"textDecoration": "none"}}>
+                        <LinkPageBtnContent>
+                            <LinkPageBtnIconImg src={LetterPostImg} alt="mypage-icon" style={{"margin-left": "8px"}}/>
+                            <LinkPageBtnTitle style={{"marginTop":"3px"}}>마이 페이지</LinkPageBtnTitle>
+                        </LinkPageBtnContent>
+                    </Link>
                 </LinkPageBtn>
             </ButtonSet>
         </Container>

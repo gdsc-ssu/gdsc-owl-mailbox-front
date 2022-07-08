@@ -17,6 +17,7 @@ import StampSelect from './Components/PostPage/StampSelect';
 import TermsAndConditions from './Components/MyPage/Setting/AboutUs/TermsAndConditions';
 import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
 import HomeSimul from './Components/HomeSimul';
+import MyPagePresenter from './Routes/MyPage';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       {/* <Route path="/" element={<Home />} /> */}
       <Route path="/create" element={<Create />} />
       <Route path="/stampselect" element={< StampSelect/>} />
+      <Route path="/mypagepresenter" element={<MyPagePresenter />} />
 
       <Route path="/setting" element={<Setting/>}/>
       <Route path="/setting/makingowl" element={<MakingOwl />} />
