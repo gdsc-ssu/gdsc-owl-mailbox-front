@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NameTextWrapper = styled.div`
     margin: 50px;
-    margin-top: 100px;
+    margin-top: 80px;
     font-size: 19px;
 `;
 const NameText = styled.div`

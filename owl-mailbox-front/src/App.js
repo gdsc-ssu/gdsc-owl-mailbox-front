@@ -12,7 +12,6 @@ import SignUp from './Components/SignUp/SignUp';
 import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
 import HomeSimul from './Components/HomeSimul';
 import MyPagePresenter from './Routes/MyPage';
-import EditName from './Components/MyPage/EditName';
 import SentListViewPresenter from './Routes/TempListView';
 import TempListViewPresenter from './Routes/TempListView';
 import StampSelectPresenter from './Routes/StampSelect';
@@ -21,6 +20,7 @@ import ListViewPresenter from './Routes/ListView';
 import ReportSelectPresenter from './Routes/ReportSelect';
 import TermsAndConditionsPresenter from './Routes/TermsAndConditions';
 import TempLetterViewPresenter from './Routes/TempLetterView';
+import EditNamePresenter from './Routes/EditName';
 
 const App = () => {
   return (
@@ -32,7 +32,7 @@ const App = () => {
       <Route path="/stampselect" element={< StampSelectPresenter/>} />
 
       <Route path="/mypage" element={<MyPagePresenter />} />
-      <Route path="/mypage/editname" element={<EditName />} />
+      <Route path="/mypage/editname" element={<EditNamePresenter />} />
       <Route path="/mypage/sentmailbox" element={<ListViewPresenter />} />
       <Route path="/mypage/tempmailbox" element={<TempListViewPresenter />} />
 

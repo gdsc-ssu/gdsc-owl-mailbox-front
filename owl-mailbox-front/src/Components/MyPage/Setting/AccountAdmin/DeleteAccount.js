@@ -57,7 +57,7 @@ const DeleteAccount = () => {
     return (
         <>
         <NameTextWrapper>
-            <NameText>보내는사람닉네임글자 님,</NameText>
+            <NameText>익명의 부엉이_13 님,</NameText>
             <Text>정말 탈퇴하시는 건가요?</Text>
         </NameTextWrapper>
         <NameTextWrapper style={{fontSize: "15px", marginTop: "60px"}}>
