@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NameTextWrapper = styled.div`
     margin: 50px;
@@ -69,8 +70,8 @@ const DeleteAccount = () => {
     <CheckBox id="didAgree" type="checkbox" />
     <CheckBoxText>위의 내용을 확인하였습니다.</CheckBoxText>
     <ConfirmBtnWrapper>
-        <ConfirmBtn>취소</ConfirmBtn>
-        <ConfirmBtn style={{backgroundColor: "#828ed1"}}>제출</ConfirmBtn>
+        <Link to="/"><ConfirmBtn>취소</ConfirmBtn></Link>
+        <Link to="/login"><ConfirmBtn style={{backgroundColor: "#828ed1"}}>제출</ConfirmBtn></Link>
     </ConfirmBtnWrapper>
             </>
     )

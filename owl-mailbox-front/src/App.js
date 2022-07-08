@@ -11,7 +11,6 @@ import NicknameRandom from './Components/Login/NicknameRandom';
 import SignUp from './Components/SignUp/SignUp';
 import ReportCreate from './Components/Report/ReportCreate';
 import ReportView from './Components/Report/ReportView';
-import TermsAndConditions from './Components/MyPage/Setting/AboutUs/TermsAndConditions';
 import DeleteAccount from './Components/MyPage/Setting/AccountAdmin/DeleteAccount';
 import HomeSimul from './Components/HomeSimul';
 import MyPagePresenter from './Routes/MyPage';
@@ -22,6 +21,7 @@ import StampSelectPresenter from './Routes/StampSelect';
 import LetterViewPresenter from './Routes/LetterView';
 import ListViewPresenter from './Routes/ListView';
 import ReportSelectPresenter from './Routes/ReportSelect';
+import TermsAndConditionsPresenter from './Routes/TermsAndConditions';
 
 const App = () => {
   return (
@@ -40,7 +40,7 @@ const App = () => {
       <Route path="/setting" element={<Setting/>}/>
       <Route path="/setting/makingowl" element={<MakingOwl />} />
       <Route path="/setting/privacy" element={<Privacy/>}/>
-      <Route path="/setting/termsandconditions" element={<TermsAndConditions/>}/>
+      <Route path="/setting/termsandconditions" element={<TermsAndConditionsPresenter/>}/>
       <Route path="/setting/deleteaccount" element={<DeleteAccount/>}/>
 
       <Route path="/login" element={<Login />} />
